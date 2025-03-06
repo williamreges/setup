@@ -1,0 +1,47 @@
+name: Cloud Publica - Repository
+description: Exemplo de utilização de ISSUE para criar repositorio.
+title: "[Bug]: "
+labels: ["cloud-publica", "repositorio"]
+assignees:
+  - williamreges
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Formulário Padrão para Criação de Repositório Exemplos
+  - type: input
+    id: sigla
+    attributes:
+      label: Sigla do Projeto
+      description: Defina a sigla do projeto
+      placeholder: ex. lab-a01
+    validations:
+      required: true
+  - type: input
+    id: aplicacao
+    attributes:
+      label: Sigla do Projeto
+      description: Defina o nome da aplicação
+      placeholder: ex. api-payment
+    validations:
+      required: true
+  - type: dropdown
+    id: template
+    attributes:
+      label: template
+      description: Escolha um template para seu projeto
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
