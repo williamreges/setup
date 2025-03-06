@@ -1,6 +1,6 @@
 name: Cloud Publica - Repository
 description: Exemplo de utilização de ISSUE para criar repositorio.
-title: "[Bug]: "
+title: "Criação de Repositório Cloud"
 labels: ["cloud-publica", "repositorio"]
 assignees:
   - williamreges
@@ -20,7 +20,7 @@ body:
   - type: input
     id: aplicacao
     attributes:
-      label: Sigla do Projeto
+      label: Nome da Aplicação
       description: Defina o nome da aplicação
       placeholder: ex. api-payment
     validations:
@@ -28,11 +28,11 @@ body:
   - type: dropdown
     id: template
     attributes:
-      label: template
+      label: Template
       description: Escolha um template para seu projeto
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - template-java-maven-ecs
+        - template-java-maven-eks
       default: 0
     validations:
       required: true
