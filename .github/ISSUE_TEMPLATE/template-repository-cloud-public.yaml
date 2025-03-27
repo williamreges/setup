@@ -3,7 +3,7 @@ description: Exemplo de utilização de ISSUE para criar repositorio.
 title: "Criação de Repositório Cloud"
 labels: ["cloud-publica", "repositorio"]
 assignees:
-  - williamreges
+  - ${{github.author}}
 body:
   - type: markdown
     attributes:
